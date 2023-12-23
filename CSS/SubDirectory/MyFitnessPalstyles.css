@@ -23,7 +23,7 @@ body{
   text-decoration: underline;
 }
 .carousel-control-prev, .carousel-control-next {
-  bottom: 75%;
+  bottom: 50%;
   z-index: 5;
 
 }
@@ -282,7 +282,10 @@ p{
 
 }
 
-
+.solution img{
+  width: 15%;
+  display: inline-block;
+}
 
 
 
