@@ -1,0 +1,108 @@
+body{
+  background-color: #FBC2B5;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  padding-bottom: 0px; 
+  padding-top: 20px; 
+}
+
+/*Nav Bar*/
+.nav-item{
+    justify-content: center;
+    text-align: center;
+    padding-left: 40px;
+
+}
+.navbar-nav .nav-link.active.glow {
+  color: white; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+.navbar-nav .nav-item:hover .nav-link {
+  color: #A14A76; 
+  text-decoration: underline;
+}
+.carousel-control-prev, .carousel-control-next {
+  bottom: 75%;
+  z-index: 5;
+
+}
+  #name{
+    text-align: center;
+    color: #353535;
+    font-family: 'Koulen', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 110px;
+  }
+  .youmans {
+    color: #747474;
+}   
+.navbar {
+  backdrop-filter: blur(5px);
+}
+/*Nav Bar*/
+
+
+
+
+
+
+
+
+
+/*About*/
+  .about{
+    display: flex;
+    padding: 15%;
+    padding-top: 10%;
+    animation: slideFadeIn 5s forwards; /* Use slideFadeIn animation */
+  }
+  .pic h2 , .desc h2{
+    font-family: 'Koulen', sans-serif;
+    font-weight: lighter;
+  }
+  .pic p ,.desc p {
+    font-family: 'KoPub Batang';
+    color: #747474;
+  }
+  .pic, .desc{
+    flex: 50%;
+    padding: 0px;
+}
+  .about img{
+    width: 70%;
+    border: 4px solid #A14A76;
+
+  }
+  /*Fade*/
+  @keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-5%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+  /*Fade*/
+/*About*/
+
+
+
+/*Footer*/
+  footer{
+      text-align: center;
+      width: 80%;
+      height: 0px;
+      margin: auto;
+      border-top: 1px solid #747474;
+      padding-bottom: 120px;
+    }
+    footer p {
+      padding-top: 50px;
+    }
+  /*Footer*/
+  
+/*Fade In*/

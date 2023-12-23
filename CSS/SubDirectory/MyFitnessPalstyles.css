@@ -1,0 +1,318 @@
+body{
+  background-color: #FBC2B5;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  padding-bottom: 0px; 
+  padding-top: 20px; 
+}
+
+/*Nav Bar*/
+.nav-item{
+    justify-content: center;
+    text-align: center;
+    padding-left: 40px;
+
+}
+.navbar-nav .nav-link.active.glow {
+  color: white; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
+.navbar-nav .nav-item:hover .nav-link {
+  color: #A14A76; 
+  text-decoration: underline;
+}
+.carousel-control-prev, .carousel-control-next {
+  bottom: 75%;
+  z-index: 5;
+
+}
+  #name{
+    text-align: center;
+    color: #353535;
+    font-family: 'Koulen', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 110px;
+  }
+  .youmans {
+    color: #747474;
+}   
+.navbar {
+  backdrop-filter: blur(5px);
+}
+/*Nav Bar*/
+
+
+
+
+
+h2{
+  font-family: 'Koulen';
+  font-weight: lighter;
+}
+p{
+  font-family: 'KoPub Batang';
+  color: #747474;
+}
+
+
+/*Front Page*/
+.FP {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: 'Komoda', sans-serif;
+  margin-bottom: 10%;
+  opacity: 0;
+  animation: fadeIn 7s forwards;
+  margin-top: 55px;
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  height: 550px;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+  z-index: 2;
+}
+.FP img {
+  position: relative;
+  width: 150%;
+  height: 100%;
+  animation: slideImage 10s linear infinite;
+  bottom: 400px;
+}
+.FP h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Koulen', sans-serif;
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  background-color: transparent;
+  padding: 25px;
+  height: 250px;
+  display: inline-block;
+  z-index: 3;
+}
+.FP #phrase {
+  position: absolute;
+  top: 68%; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Koulen', sans-serif;
+  color: #ffffff;
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 0px;
+  z-index: 3;
+}
+.FP #title {
+  position: absolute;
+  top: 75%; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Koulen', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 0px;
+  z-index: 3;
+}
+
+/* Fade Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideImage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1%); /* Adjust the percentage based on the desired sliding distance */
+  }
+}
+/*Front Page*/
+
+
+
+/*projects*/
+
+
+/*FadeIn*/
+  .reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+/*FadeIn*/
+.summary{
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 33%;
+}
+.summary .left, .summary .right{
+  flex: 50%;
+}
+.summary .left{
+  text-align: center;
+  margin-top: 10%;
+
+}
+
+/*Background Info*/
+.backgroundinformation{
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 33%;
+
+}
+.backgroundinformation img{
+  width: 60%;
+}
+
+
+/*Background Info*/
+.mid{
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 33%;
+}
+
+
+
+/*Design Process*/
+.design{
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 33%;
+}
+
+.design img{
+  display: inline-block;
+}
+/*Design Process*/
+
+
+
+
+
+/*Mid*/
+.challenges{
+  max-width: 50%;
+}
+.challenges img{
+  display: inline-block;
+  width: 30%; 
+  margin-right: 5%; /* Add a small margin between images */
+  max-width: 100%;
+}
+.challenges img:last-child {
+  margin-right: 0; /* Remove margin for the last image to prevent extra space */
+}
+.challenges .images {
+  text-align: center; /* Center the images within the .process container */
+}
+
+
+
+
+.process img {
+  display: inline-block;
+  width: 30%; 
+  margin-right: 5%; /* Add a small margin between images */
+  max-width: 100%;
+}
+
+.process img:last-child {
+  margin-right: 0; /* Remove margin for the last image to prevent extra space */
+}
+.process .images {
+  text-align: center; /* Center the images within the .process container */
+}
+/*Mid*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.solution{
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+  text-align: center;
+  width: 80%;
+  height: 0px;
+  margin: auto;
+  border-top: 1px solid #747474;
+  margin-bottom: 10%;
+}
+footer p {
+  padding-top: 20px;
+}
+/*Footer*/
+
+
