@@ -98,29 +98,49 @@ body{
   display: inline-block;
   z-index: 3;
 }
-.FP #phrase {
-  position: absolute;
-  top: 68%; 
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Koulen', sans-serif;
-  color: #ffffff;
-  font-size: 35px;
-  letter-spacing: 3px;
-  line-height: 0px;
-  z-index: 3;
-}
+
+.FP #phrase,
 .FP #title {
   position: absolute;
-  top: 75%; 
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Koulen', sans-serif;
   color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0.5px;
-  line-height: 0px;
   z-index: 3;
+}
+
+.FP #phrase {
+  top: 68%;
+  font-size: 2vw; /* Adjust font size based on viewport width */
+  letter-spacing: 0.2vw; /* Adjust letter spacing based on viewport width */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.FP #title {
+  top: 75%;
+  font-size: 1vw; /* Adjust font size based on viewport width */
+  letter-spacing: 0.05vw; /* Adjust letter spacing based on viewport width */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Add specific styles for smaller screens if needed */
+  .FP h1 {
+    font-size: 8vw;
+    padding: 4vw;
+    height: 20vw;
+    border: 0.8vw solid rgb(255, 255, 255);
+  }
+
+  .FP #phrase {
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
+  }
+
+  .FP #title {
+    font-size: 1.5vw;
+    letter-spacing: 0.07vw;
+  }
 }
 
 /* Fade Effect */
