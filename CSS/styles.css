@@ -76,13 +76,25 @@ body{
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
   z-index: 2;
 }
-.carousel-item img{
+.carousel-item img {
   position: relative;
-  width: 150%;
+  width: 100%;
   height: 100%;
   animation: slideImage 10s linear infinite;
-  bottom: 400px;
+  bottom: 500px;
 }
+
+/* Styles for mobile view */
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    bottom: 0; /* Adjust this value as needed for your mobile view */
+  }
+  .carousel-control-prev,.carousel-control-next {
+    width: 40px;
+    height: 100%;
+  }
+}
+
 
 /**/
 
@@ -270,6 +282,19 @@ body{
   }
   /*Box2*/
 /*Fade In*/
+
+
+@media only screen and (max-width: 768px) {
+  .box1 p , .box2 p{
+    line-height: 20px;
+  }
+  .box1 button , .box2 button{
+    font-size: 12px;
+    line-height: 15px;
+
+
+  }
+}
 
 
 

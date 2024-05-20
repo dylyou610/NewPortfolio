@@ -132,6 +132,15 @@ p{
   line-height: 0px;
   z-index: 3;
 }
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    bottom: 0; /* Adjust this value as needed for your mobile view */
+  }
+  .carousel-control-prev,.carousel-control-next {
+    width: 40px;
+    height: 100%;
+  }
+}
 
 /* Fade Effect */
 @keyframes fadeIn {
@@ -178,6 +187,20 @@ p{
         padding-top: 20px;
     }
 
+
+    @media only screen and (max-width: 768px) {
+      .project .left p ,  .project .right p{
+        line-height: 20px;
+      }
+      .project2 .left p ,  .project2 .right p{
+        line-height: 20px;
+      }
+      .project3 .left p ,  .project3 .right p{
+        line-height: 20px;
+      }
+    }
+    
+    
 
 /*projects*/
 
