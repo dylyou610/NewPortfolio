@@ -190,17 +190,23 @@ p{
 
     @media only screen and (max-width: 768px) {
       .project .left p ,  .project .right p{
-        line-height: 20px;
+        line-height: 13px;
       }
       .project2 .left p ,  .project2 .right p{
-        line-height: 20px;
+        line-height: 13px;
       }
       .project3 .left p ,  .project3 .right p{
-        line-height: 20px;
+        line-height: 13px;
       }
     }
     
     
+    @media only screen and (max-width: 768px) {
+    .projects img,  .projects2 img ,  .projects3 img{
+      width: 15vh;
+    }
+
+}
 
 /*projects*/
 
