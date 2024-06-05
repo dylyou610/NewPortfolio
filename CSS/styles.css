@@ -5,6 +5,7 @@ body{
   overflow-x: hidden;
   padding-bottom: 0px; 
   padding-top: 20px; 
+  
 }
 
 
@@ -94,6 +95,48 @@ body{
     height: 100%;
   }
 }
+
+
+/**/
+
+
+.logo {
+  position: absolute; /* This will position the logo relative to the nearest positioned ancestor */
+  top: 50%; /* Centers the logo vertically */
+  left: 50%; /* Centers the logo horizontally */
+  transform: translate(-50%, -50%); /* Adjusts the positioning to the center by shifting the logo back by half its width and height */
+  z-index: 1000; /* Ensure this is higher than other elements */
+  width: 40%; /* Adjust the width as needed */
+  display: block;
+}
+
+.logo img {
+  width: 100%; /* This ensures the image scales to the width of its container */
+  height: auto; /* This ensures the image keeps its aspect ratio */
+}
+
+/* Fade Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideImage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1%); /* Adjust the percentage based on the desired sliding distance */
+  }
+}
+
+
+/*Front Page*/
+
+
 
 
 /**/

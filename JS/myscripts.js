@@ -13,6 +13,8 @@ function myFunction() {
     topnav.classList.toggle('show');
 }
 
+
+
 // Fade in
 window.addEventListener('scroll', reveal);
 
@@ -32,3 +34,4 @@ document.querySelectorAll('.reveal').forEach(element => {
     element.addEventListener('mouseenter', () => element.classList.add('active'));
     element.addEventListener('mouseleave', () => element.classList.remove('active'));
 });
+

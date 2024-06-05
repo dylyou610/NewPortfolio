@@ -163,90 +163,27 @@ p{
 
 
 
-/*projects*/
-    .project, .project2 , .project3{
-        display: flex;
-        margin-top: 20%;
-        display: flex;
-        padding: 40px;
-    }
-    .project .left, .project .right,.project2 .left, .project2 .right,.project3 .left, .project3 .right{
-        flex: 50%;
-        padding: 0 50px;
-    }
-    .projects img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        border: 5px solid #A14A76;
-    }
-    .project .left p,.project2 .left p,.project3 .left p{
-        text-align: center;
-        line-height: 1px;
-        padding-top: 20px;
-    }
+/*Gallery*/
 
-
-    @media only screen and (max-width: 768px) {
-      .project .left p ,  .project .right p{
-        line-height: 13px;
-      }
-      .project2 .left p ,  .project2 .right p{
-        line-height: 13px;
-      }
-      .project3 .left p ,  .project3 .right p{
-        line-height: 13px;
-      }
-    }
-    
-    
-    @media only screen and (max-width: 768px) {
-    .projects img,  .projects2 img ,  .projects3 img{
-      width: 15vh;
-    }
-
+.row{
+  padding: 100px;
+}
+.row img {
+  transition: transform 0.5s;
 }
 
-/*projects*/
+.row img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*Gallery*/
 
 
 
 
 /*Fade In*/
-.project.reveal{
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
 
-.project.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
-}
-
-
-.project2.reveal{
-  transform: translateX(150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.project2.reveal.active{
-  transform: translateX(0px);
-  opacity: 1;
-}
-
-.project3.reveal{
-  transform: translateX(-150px);
-  opacity: 0;
-  transition: all 1s ease;
-}
-
-.project3.reveal.active{
-  transform: translateX(0px);
-  opacity: 1;
-}
 /*Fade In*/
 
 
